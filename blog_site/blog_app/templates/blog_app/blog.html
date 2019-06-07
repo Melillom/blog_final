@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>{{ blog.title }}</title>
+		<style>
+				body {
+					font-family: 'Comic Sans MS';
+					background-color: #99c4fc;
+					color: white;
+				}
+				
+				img{
+					width: 600px;
+				}
+		</style>
+	</head>
+	<body>
+	<h6>by: {{ blog.author }} published: {{ blog.date }}</h6>
+	<p>{{ blog.body|safe }}</p>
+	</body>
+</html>
